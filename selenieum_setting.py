@@ -10,7 +10,7 @@ chrome_option = Options()
 
 # 브라우저 꺼짐 방지
 chrome_option.add_experimental_option("detach", True)
-# 불필요한 에러 메시지 없애기
+# 불필요한 에러 메시지 제거
 chrome_option.add_experimental_option("excludeSwitches", ["enable-logging"])
 
 service = Service(executable_path=ChromeDriverManager().install())
